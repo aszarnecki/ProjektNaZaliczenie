@@ -5,11 +5,11 @@
         <div class="col-md-8">
                 <form class="row g-3 login-content" method="post"> {% csrf_token %}
                     <div class="mb-3 row">
-                        <h2>Usun post</h2>
+                        <h2>Edytuj post</h2>
                     </div>
                         {% csrf_token %}
                         {{ form.as_p }}
-                        <input type="submit" value="Save">
+                        <input type="submit" value="Zapisz">
                 </form>
             </div>
         </div>
