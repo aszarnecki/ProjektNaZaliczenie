@@ -1,0 +1,19 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+                <form class="row g-3 login-content" method="post"> {% csrf_token %}
+                    <div class="mb-3 row">
+                        <h2>Usun post</h2>
+                    </div>
+                        {% csrf_token %}
+                        Czy na pewno chcesz usunąć ten post?
+                        <input type="submit" value="Tak" />
+                        <a href="/">Nie </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

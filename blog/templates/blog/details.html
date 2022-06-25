@@ -1,0 +1,30 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="post-content">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <h4 class="username">{{object.title}}</h4>
+                        </div>
+                        {% if user.username == object.author.username or user.is_superuser %}
+                        <div class="reaction">
+                            <a class="btn" href="{%  url 'blog:blog-delete' post.id  %}"><i class="fa-solid fa-trash-can"></i></a>
+                            <a class="btn" href="{%  url 'blog:blog-update' post.id  %}"><i class="fa-solid fa-pen"></i></a>
+                        </div>
+                        {% endif %}
+                    </div>
+                    <hr class="divider">
+                    <div class="post-text">
+                        <p>{{object.post_content}}</p>
+                    </div>
+                    <div class="new-comment-content">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="profile-photo-sm" alt="AVATAR">
+                        <h4 class="username">{{object.author.username}}</h4>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+{% endblock %}

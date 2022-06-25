@@ -1,0 +1,33 @@
+{% extends 'blog/base.html' %}
+{% block content %}
+{% if latest_post_list %}
+    {% for post in latest_post_list %}
+        <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="post-content">
+                    <div class="post-header">
+                        <div class="user-info">
+                            <h4 class="username">{{post.title}}</h4>
+                        </div>
+                    </div>
+                    <hr class="divider">
+                    <div class="post-text">
+                        <p>{{post.post_content}}</p>
+                    </div>
+                    <div class="new-comment-content">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar6.png" class="profile-photo-sm" alt="AVATAR">
+                        <h4 class="username">{{post.author.username}}</h4>
+                    </div>
+                    <div class="show-more">
+                        <a href="{%  url 'blog:blog-detail' post.id  %}">POKAŻ WIĘCEJ</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    </div>
+    {% endfor %}
+{% else %}
+    Brak dostepnych postów
+{% endif %}
+{% endblock %}

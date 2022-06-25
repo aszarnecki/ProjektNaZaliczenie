@@ -1,0 +1,133 @@
+body{margin-top:20px;}
+hr.divider{
+    margin: 5px;
+}
+h5.username, h4.username{
+  display: inline;
+}
+.post-text{
+    margin-left: 10px;
+}
+.row{
+    justify-content: center;
+}
+.post-content{
+    background: #f8f8f8;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid #f1f2f2;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    padding: 5px;
+}
+
+.login-content{
+    background: #f8f8f8;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid #f1f2f2;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+    height: 400px;
+    padding: 20px;
+    align-content: center;
+
+}
+
+.register-content{
+    background: #f8f8f8;
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid #f1f2f2;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+    position: relative;
+    height: 800px;
+    padding: 20px;
+    align-content: center;
+
+}
+
+a.post-content{
+
+}
+.comment-content{
+    background: #e5e4e4;
+    border-radius: 10px;
+    width: 90%;
+    border: 1px solid #f1f2f2;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+    padding: 5px;
+    margin-left: 10%;
+}
+.new-comment-content{
+    background: #e5e4e4;
+    border-radius: 10px;
+    width: fit-content;
+    border: 1px solid #f1f2f2;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    height: auto;
+    padding: 5px;
+    margin-left: auto;
+    display: flex;
+    justify-content: right;
+}
+.form-control{
+    margin-left: 5px;
+
+}
+
+img.profile-photo-md {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+img.profile-photo-sm {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.text-red {
+    color: #ef4136;
+}
+
+.following {
+    color: #8dc63f;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.reaction{
+    display: inline;
+    margin-right: 0;
+}
+.post-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-start;
+}
+.user-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.show-more{
+    display: flex;
+    justify-content: center;
+}
